@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#ADD8E6">
+
+<TextView
+        android:id="@+id/txt123456"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="COMP3606ASGBirds - ThylerBrathwaite - ID: 816043121"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#0000FF"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp" />
+
+    <Spinner
+        android:id="@+id/spnrBirdList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        app:layout_constraintTop_toBottomOf="@id/txt123456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/picBird"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:contentDescription="Bird Picture"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/spnrBirdList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <CheckBox
+        android:id="@+id/boxDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Owner (20% off)"
+        app:layout_constraintTop_toBottomOf="@id/picBird"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/btnCompute"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="CALC"
+        android:backgroundTint="#0000FF"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/boxDiscount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/inputTotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Total Cost"
+        android:enabled="false"
+        android:inputType="numberDecimal"
+        android:background="@android:drawable/edit_text"
+        app:layout_constraintTop_toBottomOf="@id/btnCompute"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <ImageButton
+        android:id="@+id/chirpBird"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Info Button"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintTop_toBottomOf="@id/inputTotal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/btnText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SMS"
+        android:backgroundTint="#0000FF"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/chirpBird"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
